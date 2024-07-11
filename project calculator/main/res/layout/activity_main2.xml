@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Signin">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="148dp"
+        android:padding="10dp"
+        android:text="Signin"
+        android:textSize="34dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/User_msg"
+        android:text="Email"
+        android:textSize="23dp"
+        android:padding="10dp"
+        android:layout_below="@id/signin"/>
+
+   <EditText
+    android:id ="@+id/User_Email"
+    android:layout_height="wrap_content"
+    android:layout_width="290dp"
+    android:layout_below ="@id/signin"
+    android:layout_toRightOf ="@id/User_msg"
+    android:singleLine ="true"
+/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:text="password"
+        android:textSize="23dp"
+        android:padding="10dp"
+        android:layout_below="@id/User_msg"/>
+
+    <EditText
+        android:id ="@+id/User_pass"
+        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_below ="@id/User_msg"
+        android:layout_toRightOf ="@id/pass"
+        android:singleLine ="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginBtn"
+        android:text="Login"
+        android:padding="10dp"
+        android:layout_below="@id/User_pass"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/User_response"
+        android:text="response"
+        android:layout_below="@id/LoginBtn"
+        />
+</RelativeLayout>
